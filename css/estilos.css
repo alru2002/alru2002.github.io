@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #010101;
+}
+.texto-netflix {
+    font-family: 'Helvetica Neue', sans-serif; /* Ejemplo de una fuente similar */
+    /* También puedes utilizar otras fuentes que se asemejen a la del logotipo de Netflix */
+    /* Asegúrate de que la fuente esté disponible en tu proyecto o importada correctamente */
+    font-size: 60px; /* Ajusta el tamaño de la fuente según sea necesario */
+    display: flex;
+    font-weight: bold; /* Si es necesario, aplica negrita o modifica el peso de la fuente */
+    /* Otros estilos que desees aplicar al texto */
+    background-color: #010101;
+    color: red;
+    text-align: justify;
+    justify-content: center;
+    
+  }
+   
+    
+.imagen-usuario {
+  width: 207px;
+  height: 207px;
+  margin:  auto;
+  justify-content: center;
+  background-color: transparent;
+  overflow: hidden;
+  border-color:transparent;
+}
+
+.boton-usuario img {
+    border-color: #010101;
+    width: 100%; /* Asegura que la imagen ocupe todo el espacio del botón */
+    height: 100%; /* Asegura que la imagen ocupe todo el espacio del botón */
+    object-fit: cover; /* Ajusta la imagen para cubrir completamente el espacio del contenedor */
+    cursor: pointer;
+  }
+
+
+  
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+}
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+.texto-logo-netflix{
+  font-family: 'Helvetica Neue', sans-serif; /* Ejemplo de una fuente similar */
+  /* También puedes utilizar otras fuentes que se asemejen a la del logotipo de Netflix */
+  /* Asegúrate de que la fuente esté disponible en tu proyecto o importada correctamente */
+  font-size: 2rem; /* Ajusta el tamaño de la fuente según sea necesario */
+  display: flex;
+  font-weight: bold; /* Si es necesario, aplica negrita o modifica el peso de la fuente */
+  /* Otros estilos que desees aplicar al texto */
+  background-color: #010101;
+  color: red;
+  text-align: justify;
+  justify-content: center;
+  
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* Banner */
+.background--banner{
+    height: 20vh;
+    width: 100%;
+    overflow: hidden;
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20vh;
+    overflow: hidden;
+    position: absolute;
+    background-color: black;
+}
+/* Menu */
+.menu{
+    width: 95%;
+    margin-inline:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    font-size: 15px;
+}
+.navegacion{
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 15px;
+}
+@media (min-width:400px) {
+    .navegacion{
+        gap: 15px;
+    }
+}
+/* Menu izquierda */
+
+
+/* Menu derecha */
+.navegacion-usuario{
+  width: 80px;
+  height: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* footer */
+.footer{
+    padding-top: 20px;
+    background-color: black;
+    padding-bottom: 20px;
+}
+.footer--contenedor{
+    width: 95%;
+    margin-inline:auto;
+}
+.iconos{
+    display: flex;
+    gap: 20px;
+}
+.iconos li{
+    width: 30px;
+    height: 30px;
+}
+
+
+.container{
+    padding-block: 2px;
+    background-color: rgb(7, 7, 7);
+    color: white;
+}
+.container--info{
+    width: 95%;
+    margin-inline: auto;
+}
+.container--info h1,
+.container--info h2{
+    padding: 10px;
+}
+
+.imagenes{
+    overflow-x: scroll;
+    display: flex;
+    gap: 20px;
+}
+.imagenes::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+.imagen{
+  min-width:200px;
+  max-width: 200px;
+
+  height: auto;
+  overflow: hidden;
+  border-radius: 12px;
+}
