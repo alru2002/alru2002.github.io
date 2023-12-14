@@ -145,14 +145,15 @@ url('/images/cv.jpeg');
     padding: 20px;
     background-color: transparent;
     max-width: 500px;
-    margin: 3%;
+    margin:auto;
+    margin-left: 3%;
     text-align: center;
     border-radius: 40px;
 }
 
 .inicio .contenido-banner h1{
-    margin-top: 40px;
-    font-size: 42px;
+    margin-top: 70px;
+    font-size: 30px;
     font-family: 'Monstserrat';
 }
 .inicio .contenido-banner h2{
@@ -175,7 +176,7 @@ url('/images/cv.jpeg');
     transition: .3s;
 }
 .inicio .contenido-banner .redes a:hover{
-    background-color: #1CB698;
+    background-color: red;
 }
 
 
