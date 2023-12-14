@@ -254,7 +254,7 @@ a{
 
 
 
-@media (min-width:360px) {
+@media (min-width:10px) {
     .bajar-cv {
         position: absolute;
         bottom:0rem; /* Ajusta la distancia desde la parte inferior de la sección */
