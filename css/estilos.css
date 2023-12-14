@@ -217,25 +217,25 @@ a{
     position: absolute;
     z-index: 1;
     margin: 3%;
-    margin-top: 8%;
-    font-size: 2rem;
+    margin-top: 16%;
+    font-size: 1.2rem;
     text-align: left;
     font-family: 'Montserrat';
  }
  .descripcion{
      position: absolute;
      margin-left:4%;
-     margin-top: 7rem;
+     margin-top: 22%;
      margin-right: 50%;
      text-align: justify;
      font-family: 'Montserrat';
-     font-size: 0.7rem;
+     font-size: 0.5rem;
      font-weight: 500;
    
  }
  .bajar-cv {
     position: absolute;
-    bottom: 14rem; /* Ajusta la distancia desde la parte inferior de la sección */
+    bottom: 100rem; /* Ajusta la distancia desde la parte inferior de la sección */
     left: 4%; /* Ajusta la distancia desde el lado izquierdo */
     width: 10rem;
     height: 2rem;
@@ -254,31 +254,11 @@ a{
 
 
 
-@media (min-width:10px) {
-    .bajar-cv {
-        position: absolute;
-        bottom:0rem; /* Ajusta la distancia desde la parte inferior de la sección */
-        left: 4%; /* Ajusta la distancia desde el lado izquierdo */
-        width: 10rem;
-        height: 2rem;
-        background-color: rgba(0, 0, 0, 0.3);
-        color: aliceblue;
-        border-radius: 4%;
-        font-family: 'Montserrat';
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 5px; /* Espacio entre el icono y el texto */
-        font-size: 0.8rem; /* Tamaño del texto */
-        border: none;
-    }
 
-}
 @media (min-width:450px) {
     .bajar-cv {
         position: absolute;
-        bottom:10rem; /* Ajusta la distancia desde la parte inferior de la sección */
+        bottom:15rem; /* Ajusta la distancia desde la parte inferior de la sección */
         left: 4%; /* Ajusta la distancia desde el lado izquierdo */
         width: 10rem;
         height: 2rem;
@@ -297,32 +277,12 @@ a{
 
 }
 
-@media (min-width:580px) {
-    .bajar-cv {
-        position: absolute;
-        bottom: 12rem; /* Ajusta la distancia desde la parte inferior de la sección */
-        left: 4%; /* Ajusta la distancia desde el lado izquierdo */
-        width: 10rem;
-        height: 2rem;
-        background-color: rgba(0, 0, 0, 0.3);
-        color: aliceblue;
-        border-radius: 4%;
-        font-family: 'Montserrat';
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 5px; /* Espacio entre el icono y el texto */
-        font-size: 0.8rem; /* Tamaño del texto */
-        border: none;
-    }
 
-}
 
 @media (min-width:640px) {
     .bajar-cv {
         position: absolute;
-        bottom: 13rem; /* Ajusta la distancia desde la parte inferior de la sección */
+        bottom: 14.5rem; /* Ajusta la distancia desde la parte inferior de la sección */
         left: 4%; /* Ajusta la distancia desde el lado izquierdo */
         width: 10rem;
         height: 2rem;
@@ -500,7 +460,7 @@ a{
         position: absolute;
         bottom: 14rem; /* Ajusta la distancia desde la parte inferior de la sección */
         left: 4%; /* Ajusta la distancia desde el lado izquierdo */
-        width: 15rem;
+        width: 10rem;
         height: 2rem;
         background-color: rgba(0, 0, 0, 0.3);
         color: aliceblue;
