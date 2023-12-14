@@ -9,35 +9,52 @@
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
-    <header class="background--banner">
-        <div class="banner">
-            <div class="menu">              
-                <nav >
-                    <ul class="navegacion navegacion--izquierda">
-                        <li  ><a href="#"><h1 class="texto-logo-netflix">CARFLIX</h1></a></li>
-                        <li><a href="#Educacion">Educación</a></li>
-                        <li><a href="#Conocimientos">Conocimientos</a></li>
-                        <li><a href="#">Aptitudes</a></li>
-                        <li><a href="#">Intereses</a></li>
-                    </ul>
-                </nav>
-                <nav>
-                    <ul class="navegacion navegacion-derecha">
-                        <li class="img-right">
-                            <a href="./archivos/Carlos_Almagro_Rubio.pdf" download="Carlos_Almagro_Rubio.pdf">
-                            <i class="fas fa-download"></i>
-                                CV
-                            </a>
-                            </li>
-                        <li class="img-right"><a href="https://www.linkedin.com/in/carlos-almagro-rubio-3a8734298/"><img src="images/linkedin.svg" alt="linkedin"></a></li>
-                        <li class="img-right"><a href="https://github.com/alru2002"><img src="images/github.svg" alt="github"></a></li>
-                        <li class="usuario"><a href="#"><img src="images/usuario.png" alt="Usuario"></a></li>
-                
-                    </ul>
-                </nav>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">CARFLIX</a>
             </div>
-        </div>
-    </header>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Formacion</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()"> Conocimientos</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Aptitudes</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+
+
+  
+    <!-- <nav >
+        <ul class="navegacion navegacion--izquierda">
+            <li  ><a href="#"><h1 class="texto-logo-netflix">CARFLIX</h1></a></li>
+            <li><a href="#Educacion">Educación</a></li>
+            <li><a href="#Conocimientos">Conocimientos</a></li>
+            <li><a href="#">Aptitudes</a></li>
+            <li><a href="#">Intereses</a></li>
+        </ul>
+    </nav>
+    <nav>
+        <ul class="navegacion navegacion-derecha">
+            <li class="img-right">
+                <a href="./archivos/Carlos_Almagro_Rubio.pdf" download="Carlos_Almagro_Rubio.pdf">
+                <i class="fas fa-download"></i>
+                    CV
+                </a>
+                </li>
+            <li class="img-right"><a href="https://www.linkedin.com/in/carlos-almagro-rubio-3a8734298/"><img src="images/linkedin.svg" alt="linkedin"></a></li>
+            <li class="img-right"><a href="https://github.com/alru2002"><img src="images/github.svg" alt="github"></a></li>
+            <li class="usuario"><a href="#"><img src="images/usuario.png" alt="Usuario"></a></li>
+    
+        </ul>
+    </nav> -->
+    
     <main class="container">
         <section class="presentacion">
             <h1 class="titulo">Carlos Almagro Rubio</h1>
@@ -94,5 +111,6 @@
     src="https://kit.fontawesome.com/81581fb069.js"
     crossorigin="anonymous"
 ></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
