@@ -4,6 +4,11 @@ body{
     font-family: 'Montserrat', sans-serif;
     background-color: #000000;
 }
+img{
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
 .welcome{
     display: block;
     color: aliceblue;
@@ -133,7 +138,7 @@ html{
     rgba(0, 0, 0, 0.2),
     rgba(0, 0, 0, 0)
 ),
-url('/images/fondo.jpg');
+url('/images/cv.jpg');
     background-size: cover;
     height: 100vh;
     width: 100%;
@@ -144,17 +149,18 @@ url('/images/fondo.jpg');
 }
 
 .inicio .contenido-banner{
-    padding: 20px;
+    padding: 70px;
     background-color: transparent;
     max-width: 500px;
     margin:auto;
     margin-left: 3%;
     text-align: center;
-    border-radius: 40px;
+    border-radius: 33px;
+    align-items: center;
 }
 
 .inicio .contenido-banner h1{
-    margin-top: 70px;
+    margin-top: 40px;
     font-size: 30px;
     font-family: 'Monstserrat';
 }
@@ -173,22 +179,63 @@ url('/images/fondo.jpg');
     width: 42px;
     height: 42px;
     line-height: 42px;
-    margin: 40px 5px;
+    margin: 20px 5px;
     font-size: 20px;
     transition: .3s;
 }
 .inicio .contenido-banner .redes a:hover{
     background-color: red;
 }
-
+.header-top{
+    background-color: rgb(117, 166, 244);
+    color: rgb(252, 252, 252);
+    }
 .contenedor-img{
+    display: none;
     width: 200px;
     height: 300px;
     overflow: hidden;
     margin: auto
 
 }
-
+@media screen and (max-width: 767px) {
+    .contenedor-img{
+        display: flex;
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        margin: auto;
+       
+    
+    }
+    .inicio{
+        background-image: linear-gradient(to right, 
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0)
+    ),
+    url('/images/fondo.jpg');
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        color: #fff;
+        display: flex;
+        align-items: center;
+       background-repeat:no-repeat;
+    }
+}
+@media screen and (max-width: 767px) {
+    .contenedor-img{
+        display: flex;
+        width: 150px;
+        height: 150px;
+        overflow: hidden;s
+    
+    }
+}
 
 
 
