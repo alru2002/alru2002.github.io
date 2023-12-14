@@ -2,7 +2,21 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: #010101;
+    background-color: #000000;
+}
+.welcome{
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    
+   
+}
+.welcome h2{
+    padding-top: 2rem;
+}
+.welcome h1{
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
 }
 .texto-netflix {
     font-family: 'Helvetica Neue', sans-serif; /* Ejemplo de una fuente similar */
@@ -18,14 +32,24 @@ body{
     justify-content: center;
     
   }
-   
-    
+  .boton-inicio {
+        display: block;
+        width: 40vh;
+        height: 10vh;
+        background-color: red;
+        margin: auto;
+        border-color:transparent;
+        font-family:'Montserrat' ;
+        font-size: 20px;
+        font-weight: 700;
+        color: aliceblue;
+}
 .imagen-usuario {
   width: 207px;
   height: 207px;
   margin:  auto;
   justify-content: center;
-  background-color: transparent;
+  background-color: red;
   overflow: hidden;
   border-color:transparent;
 }
@@ -38,7 +62,7 @@ body{
     cursor: pointer;
   }
 
-
+/* Pagina CV */
   
 
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
@@ -48,6 +72,7 @@ body{
     border: 0;
     font-family: 'Roboto', sans-serif;
 }
+
 img{
     object-fit: cover;
     width: 100%;
@@ -62,7 +87,7 @@ ul{
   font-family: 'Helvetica Neue', sans-serif; /* Ejemplo de una fuente similar */
   /* También puedes utilizar otras fuentes que se asemejen a la del logotipo de Netflix */
   /* Asegúrate de que la fuente esté disponible en tu proyecto o importada correctamente */
-  font-size: 2rem; /* Ajusta el tamaño de la fuente según sea necesario */
+  font-size: 1.3rem; /* Ajusta el tamaño de la fuente según sea necesario */
   display: flex;
   font-weight: bold; /* Si es necesario, aplica negrita o modifica el peso de la fuente */
   /* Otros estilos que desees aplicar al texto */
@@ -78,18 +103,21 @@ a{
 }
 /* Banner */
 .background--banner{
-    height: 20vh;
+    height: 8vh;
     width: 100%;
     overflow: hidden;
+    z-index: 9;
 }
 .banner{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 20vh;
+    height: 8vh;
     overflow: hidden;
-    position: absolute;
+    position:fixed;
     background-color: black;
+    z-index: 10;
+   
 }
 /* Menu */
 .menu{
@@ -98,51 +126,377 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 5px;
-    font-size: 15px;
+   
 }
 .navegacion{
-    padding-top: 15px;
+    padding-top: 0px;
     display: flex;
     align-items: center;
-    gap: 5px;
-    font-size: 15px;
+    gap: 0.5rem;
+    font-size: 0.7rem;
 }
-@media (min-width:400px) {
-    .navegacion{
-        gap: 15px;
-    }
-}
-/* Menu izquierda */
 
+/* Menu izquierda */
+.navegacion--izquierda li:nth-child(2),
+.navegacion--izquierda li:nth-child(3),
+.navegacion--izquierda li:nth-child(4),
+.navegacion--izquierda li:nth-child(5){
+  display: flex;
+  font-weight: 700;
+}
+
+@media (min-width:767px) {
+  .navegacion--izquierda li:nth-child(2),
+  .navegacion--izquierda li:nth-child(3),
+  .navegacion--izquierda li:nth-child(4),
+  .navegacion--izquierda li:nth-child(5){
+    
+    display: flex;
+  }
+  .navegacion{
+    gap: 0.8rem;
+    font-size: 0.9rem
+    }
+    .texto-logo-netflix{
+       font-size: 2rem; 
+    }
+    .background--banner{
+        height: 11vh;
+    }
+    .banner{
+        height: 11vh;
+    }
+
+}
 
 /* Menu derecha */
-.navegacion-usuario{
-  width: 80px;
-  height: 100%;
-  border-radius: 6px;
+.navegacion-derecha{
   overflow: hidden;
+  display: flex;
+}
+.img-right img{
+    width: 3vh;
+    height: auto;
+}
+.usuario img{
+    width: 5vh;
+    height: auto;
 }
 
-/* footer */
-.footer{
-    padding-top: 20px;
-    background-color: black;
-    padding-bottom: 20px;
+@media (min-width:767px) {
+    .img-right img{
+        width: 5vh;
+        height: auto;
+    }
+    .usuario img{
+        width: 7vh;
+        height: auto;
+    }
 }
-.footer--contenedor{
-    width: 95%;
-    margin-inline:auto;
+
+
+/* presentacion */
+.presentacion{
+    height: 70vh;
+    width: 100%;
+    position: relative; 
+    background-image: linear-gradient(to right, 
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0)
+  ),
+  url('/images/cv.jpeg');
+    background-size: 100%;
+    background-position: right center;
+    background-repeat: no-repeat;
 }
-.iconos{
+.titulo{
+    position: absolute;
+    z-index: 1;
+    margin: 3%;
+    margin-top: 8%;
+    font-size: 2rem;
+    text-align: left;
+    font-family: 'Montserrat';
+ }
+ .descripcion{
+     position: absolute;
+     margin-left:4%;
+     margin-top: 7rem;
+     margin-right: 50%;
+     text-align: justify;
+     font-family: 'Montserrat';
+     font-size: 0.7rem;
+     font-weight: 500;
+   
+ }
+ .bajar-cv {
+    position: absolute;
+    bottom: 14rem; /* Ajusta la distancia desde la parte inferior de la sección */
+    left: 4%; /* Ajusta la distancia desde el lado izquierdo */
+    width: 10rem;
+    height: 2rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: aliceblue;
+    border-radius: 4%;
+    font-family: 'Montserrat';
+    text-align: center;
     display: flex;
-    gap: 20px;
-}
-.iconos li{
-    width: 30px;
-    height: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; /* Espacio entre el icono y el texto */
+    font-size: 0.8rem; /* Tamaño del texto */
+    border: none;
 }
 
+@media (min-width:450px) {
+    .bajar-cv {
+        position: absolute;
+        bottom:10rem; /* Ajusta la distancia desde la parte inferior de la sección */
+        left: 4%; /* Ajusta la distancia desde el lado izquierdo */
+        width: 10rem;
+        height: 2rem;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: aliceblue;
+        border-radius: 4%;
+        font-family: 'Montserrat';
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px; /* Espacio entre el icono y el texto */
+        font-size: 0.8rem; /* Tamaño del texto */
+        border: none;
+    }
+
+}
+
+@media (min-width:580px) {
+    .bajar-cv {
+        position: absolute;
+        bottom: 12rem; /* Ajusta la distancia desde la parte inferior de la sección */
+        left: 4%; /* Ajusta la distancia desde el lado izquierdo */
+        width: 10rem;
+        height: 2rem;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: aliceblue;
+        border-radius: 4%;
+        font-family: 'Montserrat';
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px; /* Espacio entre el icono y el texto */
+        font-size: 0.8rem; /* Tamaño del texto */
+        border: none;
+    }
+
+}
+
+@media (min-width:640px) {
+    .bajar-cv {
+        position: absolute;
+        bottom: 13rem; /* Ajusta la distancia desde la parte inferior de la sección */
+        left: 4%; /* Ajusta la distancia desde el lado izquierdo */
+        width: 10rem;
+        height: 2rem;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: aliceblue;
+        border-radius: 4%;
+        font-family: 'Montserrat';
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px; /* Espacio entre el icono y el texto */
+        font-size: 0.8rem; /* Tamaño del texto */
+        border: none;
+    }
+
+}
+
+@media (min-width:767px) {
+    .presentacion{
+       
+        height: 70vh;
+        width: 100%;
+        position: relative;
+        align-content: center;
+        background-image: linear-gradient(to right, 
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0)
+      ),
+      url('/images/cv.jpeg');
+        background-size: 100%;
+        background-position: right center;
+        background-repeat: no-repeat;
+        align-items: center;
+    
+    }
+    .titulo{
+        position: absolute;
+        z-index: 1;
+        margin: 3%;
+        font-size: 3rem;
+        text-align: left;
+     }
+     .descripcion{
+        position: absolute;
+        margin-left:4%;
+        margin-top: 7rem;
+        margin-right: 45%;
+        text-align: justify;
+        font-size: 1rem;
+        
+    }
+    .bajar-cv {
+        position: absolute;
+        bottom: 8rem; /* Ajusta la distancia desde la parte inferior de la sección */
+        left: 4%; /* Ajusta la distancia desde el lado izquierdo */
+        width: 10rem;
+        height: 2rem;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: aliceblue;
+        border-radius: 4%;
+        font-family: 'Montserrat';
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px; /* Espacio entre el icono y el texto */
+        font-size: 0.8rem; /* Tamaño del texto */
+        font-weight: 500;
+
+        border: none;
+    }
+    
+
+}
+
+@media (min-width:850px) {
+    .bajar-cv {
+        position: absolute;
+        bottom: 10rem; /* Ajusta la distancia desde la parte inferior de la sección */
+        left: 4%; /* Ajusta la distancia desde el lado izquierdo */
+        width: 10rem;
+        height: 2rem;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: aliceblue;
+        border-radius: 4%;
+        font-family: 'Montserrat';
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px; /* Espacio entre el icono y el texto */
+        font-size: 0.8rem; /* Tamaño del texto */
+        font-weight: 500;
+
+        border: none;
+    }
+
+}
+@media (min-width:950px) {
+    .bajar-cv {
+        position: absolute;
+        bottom: 11rem; /* Ajusta la distancia desde la parte inferior de la sección */
+        left: 4%; /* Ajusta la distancia desde el lado izquierdo */
+        width: 10rem;
+        height: 2rem;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: aliceblue;
+        border-radius: 4%;
+        font-family: 'Montserrat';
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px; /* Espacio entre el icono y el texto */
+        font-size: 0.8rem; /* Tamaño del texto */
+        font-weight: 500;
+
+        border: none;
+    }
+
+}
+@media (min-width:1024px) {
+    .bajar-cv {
+        position: absolute;
+        bottom: 11rem; /* Ajusta la distancia desde la parte inferior de la sección */
+        left: 4%; /* Ajusta la distancia desde el lado izquierdo */
+        width: 10rem;
+        height: 2rem;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: aliceblue;
+        border-radius: 4%;
+        font-family: 'Montserrat';
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px; /* Espacio entre el icono y el texto */
+        font-size: 0.8rem; /* Tamaño del texto */
+        font-weight: 500;
+
+        border: none;
+    }
+    
+}
+
+@media (min-width:1150px) {
+    .bajar-cv {
+        position: absolute;
+        bottom: 12.5rem; /* Ajusta la distancia desde la parte inferior de la sección */
+        left: 4%; /* Ajusta la distancia desde el lado izquierdo */
+        width: 10rem;
+        height: 2rem;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: aliceblue;
+        border-radius: 4%;
+        font-family: 'Montserrat';
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px; /* Espacio entre el icono y el texto */
+        font-size: 0.8rem; /* Tamaño del texto */
+        font-weight: 500;
+        border: none;
+    }
+
+}
+@media (min-width:1250px) {
+    .bajar-cv {
+        position: absolute;
+        bottom: 14rem; /* Ajusta la distancia desde la parte inferior de la sección */
+        left: 4%; /* Ajusta la distancia desde el lado izquierdo */
+        width: 15rem;
+        height: 2rem;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: aliceblue;
+        border-radius: 4%;
+        font-family: 'Montserrat';
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px; /* Espacio entre el icono y el texto */
+        font-size: 0.8rem; /* Tamaño del texto */
+        font-weight: 500;
+        border: none;
+
+    }
+
+}
+
+/* "Conocimientos" */
 
 .container{
     padding-block: 2px;
@@ -152,6 +506,7 @@ a{
 .container--info{
     width: 95%;
     margin-inline: auto;
+    padding-top:10rem ;
 }
 .container--info h1,
 .container--info h2{
@@ -167,6 +522,7 @@ a{
     width: 0;
     height: 0;
 }
+
 .imagen{
   min-width:200px;
   max-width: 200px;
@@ -174,4 +530,25 @@ a{
   height: auto;
   overflow: hidden;
   border-radius: 12px;
+}
+
+
+/* footer */
+
+
+.footer{
+    padding-top: 20px;
+    background-color: black;
+}
+.footer--contenedor{
+    width: 95%;
+    margin-inline:auto;
+}
+.iconos{
+    display: flex;
+    gap: 20px;
+}
+.iconos li{
+    width: 30px;
+    height: 30px;
 }
