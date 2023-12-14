@@ -209,7 +209,7 @@ a{
     rgba(0, 0, 0, 0)
   ),
   url('/images/cv.jpeg');
-    background-size: 100%;
+    background-size: cover;
     background-position: right center;
     background-repeat: no-repeat;
 }
@@ -235,7 +235,7 @@ a{
  }
  .bajar-cv {
     position: absolute;
-    bottom: 100rem; /* Ajusta la distancia desde la parte inferior de la sección */
+    bottom: 15rem; /* Ajusta la distancia desde la parte inferior de la sección */
     left: 4%; /* Ajusta la distancia desde el lado izquierdo */
     width: 10rem;
     height: 2rem;
