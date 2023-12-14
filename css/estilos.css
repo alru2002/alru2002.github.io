@@ -252,6 +252,29 @@ a{
     border: none;
 }
 
+
+
+@media (min-width:360px) {
+    .bajar-cv {
+        position: absolute;
+        bottom:0rem; /* Ajusta la distancia desde la parte inferior de la sección */
+        left: 4%; /* Ajusta la distancia desde el lado izquierdo */
+        width: 10rem;
+        height: 2rem;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: aliceblue;
+        border-radius: 4%;
+        font-family: 'Montserrat';
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px; /* Espacio entre el icono y el texto */
+        font-size: 0.8rem; /* Tamaño del texto */
+        border: none;
+    }
+
+}
 @media (min-width:450px) {
     .bajar-cv {
         position: absolute;
