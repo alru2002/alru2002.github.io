@@ -133,12 +133,14 @@ html{
     rgba(0, 0, 0, 0.2),
     rgba(0, 0, 0, 0)
 ),
-url('/images/cv.jpeg');
+url('/images/fondo.jpg');
     background-size: cover;
     height: 100vh;
+    width: 100%;
     color: #fff;
     display: flex;
     align-items: center;
+   background-repeat:no-repeat;
 }
 
 .inicio .contenido-banner{
