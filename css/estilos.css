@@ -181,6 +181,13 @@ url('/images/fondo.jpg');
     background-color: red;
 }
 
+.contenedor-img{
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    margin: auto
+
+}
 
 
 
