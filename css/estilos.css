@@ -1,299 +1,195 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
-body{
-    font-family: 'Montserrat', sans-serif;
-    background-color: #000000;
-}
-img{
-    display: block;
-    height: auto;
-    max-width: 100%;
-}
-.welcome{
-    display: block;
-    color: aliceblue;
-    text-align: center;
-    
-   
-}
-.welcome h2{
-    padding-top: 2rem;
-}
-.welcome h1{
-    padding-top: 1.5rem;
-    padding-bottom: 0.5rem;
-}
-.texto-netflix {
-    font-family: 'Helvetica Neue', sans-serif; /* Ejemplo de una fuente similar */
-    /* También puedes utilizar otras fuentes que se asemejen a la del logotipo de Netflix */
-    /* Asegúrate de que la fuente esté disponible en tu proyecto o importada correctamente */
-    font-size: 60px; /* Ajusta el tamaño de la fuente según sea necesario */
-    display: flex;
-    font-weight: bold; /* Si es necesario, aplica negrita o modifica el peso de la fuente */
-    /* Otros estilos que desees aplicar al texto */
-    background-color: #010101;
-    color: red;
-    text-align: justify;
-    justify-content: center;
-    
-  }
-  .boton-inicio {
-        display: block;
-        width: 40vh;
-        height: 10vh;
-        background-color: red;
-        margin: auto;
-        border-color:transparent;
-        font-family:'Montserrat' ;
-        font-size: 20px;
-        font-weight: 700;
-        color: aliceblue;
-}
-.imagen-usuario {
-  width: 207px;
-  height: 207px;
-  margin:  auto;
-  justify-content: center;
-  background-color: red;
-  overflow: hidden;
-  border-color:transparent;
-}
-
-.boton-usuario img {
-    border-color: #010101;
-    width: 100%; /* Asegura que la imagen ocupe todo el espacio del botón */
-    height: 100%; /* Asegura que la imagen ocupe todo el espacio del botón */
-    object-fit: cover; /* Ajusta la imagen para cubrir completamente el espacio del contenedor */
-    cursor: pointer;
-  }
-
 /* Pagina CV */
-html{
-    /* me permite deslizar cuando hago clic en los links del menu */
+/* Inicio */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    
+}
+body{
+    background-color: black;
+}
+html {
     scroll-behavior: smooth;
 }
+#inicio{
+    background-image: linear-gradient(to right, 
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.6)
+    ), url('/images/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 
-.contenedor-header{
-    background: #090909;
+}
+#inicio .container header{
+    background-color: black;
     position: fixed;
     width: 100%;
+    z-index: 100;
     top: 0;
-    left: 0;
-    z-index: 99;
 }
-
-.contenedor-header header{
+#inicio .container header .container-header{
     max-width: 1100px;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
+    padding: 10px 20px;
 }
-
-.logo a{
-  font-family: 'Helvetica Neue', sans-serif; /* Ejemplo de una fuente similar */
-  /* También puedes utilizar otras fuentes que se asemejen a la del logotipo de Netflix */
-  /* Asegúrate de que la fuente esté disponible en tu proyecto o importada correctamente */
-  font-size: 36px; /* Ajusta el tamaño de la fuente según sea necesario */
-  display: flex;
-  font-weight: bold; /* Si es necesario, aplica negrita o modifica el peso de la fuente */
-  /* Otros estilos que desees aplicar al texto */
-  color: red;
-  text-decoration: none;
-
-  
-}
-.contenedor-header header ul{
-    display: flex;
+.container-header a{
+    text-decoration: none;
     list-style: none;
 }
-.contenedor-header header nav ul li a{
-    text-align: none;
-    color: #fff;
-    margin: 0 15px;
-    padding: 3px;
-    transition: .5s;
-    text-decoration: none;
+#inicio .container header .container-header h1{
+   text-align:center; 
+   color: red;
 }
-.contenedor-header header nav ul li a:hover{
+.container-header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.container-header nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .3s;
+
+}
+.container-header nav ul li a:hover{
     color: red;
 }
-.nav-responsive{
-    background-color: #1CB698;
-    color:#fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: none;
-}
-
-/* inicio */
-.inicio{
-    background-image: linear-gradient(to right, 
-    rgba(0, 0, 0, 1),
-    rgba(0, 0, 0, 0.8),
-    rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0)
-),
-url('/images/cv.jpg');
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-    color: #fff;
-    display: flex;
-    align-items: center;
-   background-repeat:no-repeat;
-}
-
-.inicio .contenido-banner{
-    padding: 70px;
-    background-color: transparent;
-    max-width: 500px;
-    margin:auto;
-    margin-left: 3%;
-    text-align: center;
-    border-radius: 33px;
-    align-items: center;
-}
-
-.inicio .contenido-banner h1{
-    margin-top: 40px;
-    font-size: 30px;
-    font-family: 'Monstserrat';
-}
-.inicio .contenido-banner h2{
-    font-size: 15px;
-    font-weight: normal;
-    font-family: 'Monstserrat';
-
-}
-.inicio .contenido-banner .redes a{
-    color: #fff;
-    display: inline-block;
+ .contacto a{
     text-decoration: none;
-    border: 1px solid #fff;
-    border-radius: 100%;
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
-    margin: 20px 5px;
-    font-size: 20px;
+    color: aliceblue;
+    display: inline-block;
+    margin-left: 10px;
     transition: .3s;
 }
-.inicio .contenido-banner .redes a:hover{
-    background-color: red;
+.contacto a:hover{
+    color: red;
 }
-.header-top{
-    background-color: rgb(117, 166, 244);
-    color: rgb(252, 252, 252);
-    }
-.contenedor-img{
+/* .container .container-header .contacto a i{
+    size: 10px;
+    color: aliceblue;
+   
+} */
+
+.presentacion{
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: aliceblue;
+}
+
+.bienvenida{
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: aliceblue;
+
+
+}
+.presentacion h2{
+    font-size: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+
+}
+.presentacion h2 span{
+    font-size: 40px;
+    color: red;
+}
+
+.presentacion .descripcion{
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 16px;
+    text-align: center;
+    
+
+}
+
+#icono-nav{
+    color: aliceblue;
     display: none;
-    width: 200px;
-    height: 300px;
-    overflow: hidden;
-    margin: auto
-
-}
-@media screen and (max-width: 767px) {
-    .contenedor-img{
-        display: flex;
-        width: 150px;
-        height: 150px;
-        overflow: hidden;
-        margin: auto;
-       
-    
-    }
-    .inicio{
-        background-image: linear-gradient(to right, 
-        rgba(0, 0, 0, 1),
-        rgba(0, 0, 0, 0.8),
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.4),
-        rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0)
-    ),
-    url('/images/fondo.jpg');
-        background-size: cover;
-        height: 100vh;
-        width: 100%;
-        color: #fff;
-        display: flex;
-        align-items: center;
-       background-repeat:no-repeat;
-    }
-}
-@media screen and (max-width: 767px) {
-    .contenedor-img{
-        display: flex;
-        width: 150px;
-        height: 150px;
-        overflow: hidden;s
-    
-    }
 }
 
+/* ¿Quien Soy? */
 
-
-
-
-/* "Conocimientos" */
-
-.container{
-    padding-block: 2px;
-    background-color: rgb(7, 7, 7);
-    color: white;
+#quien_soy{
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: aliceblue;
+    display: flex;
 }
-.container--info{
-    width: 95%;
-    margin-inline: auto;
-    padding-top:10rem ;
+.container-foto{
+    max-width: 400px;
+    margin-right: 80px;
+
 }
-.container--info h1,
-.container--info h2{
+.container-foto img{
     padding: 10px;
+    width:100%;
+    background-color: #3f3838;
+    border-radius: 20px;
+    
 }
+.yo{
+    margin: 0px 40px;
 
-.imagenes{
-    overflow-x: scroll;
-    display: flex;
-    gap: 20px;
 }
-.imagenes::-webkit-scrollbar{
-    width: 0;
-    height: 0;
+.yo .titulo{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: aliceblue;
+    text-decoration: underline;
+    text-decoration-color:red ;
 }
-
-.imagen{
-  min-width:200px;
-  max-width: 200px;
-
-  height: auto;
-  overflow: hidden;
-  border-radius: 12px;
+.yo h2{
+    font-size: 26px;
+    font-weight: 500;
 }
-
-
-/* footer */
-
-
-.footer{
-    padding-top: 20px;
-    background-color: black;
+.yo h2 span{
+    color: red;
+    font-weight: 600;
 }
-.footer--contenedor{
-    width: 95%;
-    margin-inline:auto;
+.yo h3{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+
 }
-.iconos{
-    display: flex;
-    gap: 20px;
+.yo p{
+    font-size: 16px;
+    margin-bottom: 12px;
 }
-.iconos li{
-    width: 30px;
-    height: 30px;
+.yo a{
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: 1px solid #3f3838;
+    margin-top: 20px;
+    transition: .3s;
+
+}
+.yo i{
+    margin:5px;
+}
+.yo a:hover{
+    color: red;
+    border-color: red;
 }
