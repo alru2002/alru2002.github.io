@@ -10,7 +10,7 @@
     
 }
 body{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 html {
     scroll-behavior: smooth;
@@ -48,7 +48,13 @@ html {
 #inicio .container header .container-header h1{
    text-align:center; 
    color: red;
+   transition: .3s;
 }
+#inicio .container header .container-header h1:hover{
+    text-shadow: 0px 0px 2px aliceblue;
+
+}
+
 .container-header nav ul{
     list-style: none;
     display: flex;
@@ -136,13 +142,13 @@ html {
 }
 .container-foto{
     max-width: 400px;
-    margin-right: 80px;
+    margin-right: 40px;
 
 }
 .container-foto img{
     padding: 10px;
     width:100%;
-    background-color: #3f3838;
+    background-color: #201e1e;
     border-radius: 20px;
     
 }
@@ -192,4 +198,205 @@ html {
 .yo a:hover{
     color: red;
     border-color: red;
+}
+
+/* Formacion */
+
+#formacion{
+    padding: 70px 15px;
+    text-align: center;
+    color: aliceblue;
+   
+    
+    
+
+}
+#formacion .titulo{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: aliceblue;
+    text-decoration: underline;
+    text-decoration-color:red ;
+    font-weight: 500;
+    margin-bottom: 100px;
+}
+
+#formacion .fila{
+    
+    display: grid;
+    grid-template-columns: minmax(0, 500px) minmax(0, 500px);
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 30px auto;
+    row-gap: 15px;
+
+}
+
+.formacion{
+   
+    background-color: #201e1e;
+    padding: 30px;
+    margin: 0px 5px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.formacion:hover{
+    box-shadow: 5px 5px 10px red;
+}
+.formacion h4{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.formacion .icono{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #646161;
+    padding: 20px;
+    margin-bottom: 15px;
+    size: 10px;
+}
+
+.formacion hr{
+    width: 40%;
+    margin: auto;
+    color: red;
+    margin-bottom: 25px;
+    background-color: red;
+}
+
+
+
+/* HARD-SKILLS */
+#hard{
+   padding: 70px;
+   text-align: center;
+   color: aliceblue;
+}
+
+#hard .titulo{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: aliceblue;
+    text-decoration: underline;
+    text-decoration-color:red ;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+#hard .hard{
+    max-width: 600px;
+    margin: 30px auto;
+    
+}
+.hard .info{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.hard .progress{
+    width: 100%;
+    height: 6px;
+    margin: 10px 0px;
+    background-color: rgb(50, 51, 52)
+}
+
+.hard .progress .p1{
+    background-color: red;
+    width: 75%;
+    height: 6px;
+    animation: rellenar1 3s forwards;
+}
+
+.hard .progress .p2{
+    background-color: red;
+    width: 80%;
+    height: 6px;
+    animation: rellenar2 3s forwards;
+}
+
+.hard .progress .p3{
+    background-color: red;
+    width: 50%;
+    height: 6px;
+    animation: rellenar3 3s forwards;
+}
+
+.hard .progress .p4{
+    background-color: red;
+    width: 70%;
+    height: 6px;
+    animation: rellenar4 3s forwards;
+}
+
+.hard .progress .p5{
+    background-color: red;
+    width: 65%;
+    height: 6px;
+    animation: rellenar5 3s forwards;
+}
+
+.hard .progress .p6{
+    background-color: red;
+    width: 55%;
+    height: 6px;
+    animation: rellenar6 2s forwards;
+}
+
+@keyframes rellenar1{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+@keyframes rellenar2{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes rellenar3{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes rellenar4{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes rellenar5{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 65%;
+    }
+}
+
+@keyframes rellenar6{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 55%;
+    }
 }
