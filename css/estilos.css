@@ -512,9 +512,13 @@ html {
 }
 .skill{
     max-width: 450px;
+    min-width: 135px;
+    min-height: 100px;
     margin: 0 10px;
     overflow: hidden;
     text-align: center;
+    border-radius: 5px;
+    transition: .3s;
 }
 
 .skill img{
@@ -522,8 +526,12 @@ html {
     display: block;
     margin: 0 auto;
     padding: 10px;
+    
 }
-
+.skill:hover{
+    transform:translateY(-1rem);
+    background-color: rgba(255, 0, 0, 0.596);
+}
 .skill h4{
     font-weight: 500;
     font-size: 20px;
@@ -641,11 +649,14 @@ html {
 .cajetilla a{
     text-decoration: none;
     color: aliceblue;
-    display: block;
+    justify-content: center;
+    display: flex;
     text-align: center;
     margin-bottom: 10px;
     gap: 20px;
     font-size: 18px;
+    transition: .5s;
+
 }
 .cajetilla p{
     text-decoration: none;
@@ -655,6 +666,7 @@ html {
     margin-bottom: 10px;
     gap: 20px;
     font-size: 18px;
+  
 }
 
 .cajetilla a:hover{
@@ -673,6 +685,7 @@ html {
     text-decoration: none;
     color: aliceblue;
     margin: 5px;
+    transition: .3s;
 }
 
 
@@ -844,15 +857,16 @@ html {
 }
 
 
-@media screen and (max-width:400px){
+@media screen and (max-width:430px){
 .cajetilla a{
     text-decoration: none;
+    
     color: aliceblue;
     display: block;
     text-align: center;
     margin-bottom: 10px;
     gap: 20px;
-    font-size: 12px;
+    font-size: 10px;
 }
 .cajetilla p{
     text-decoration: none;
