@@ -50,8 +50,8 @@
         color: aliceblue;
 }
 .imagen-usuario {
-  width: 207px;
-  height: 207px;
+  max-width: 207px;
+
   margin:  auto;
   justify-content: center;
   background-color: red;
