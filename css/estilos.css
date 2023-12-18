@@ -57,6 +57,9 @@
   background-color: red;
   overflow: hidden;
   border-color:transparent;
+  border-radius: 5px;
+  border: 2px;
+  border-color: red;
 }
 
 
