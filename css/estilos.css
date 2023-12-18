@@ -232,6 +232,10 @@ html {
     row-gap: 15px;
 
 }
+#formacion a{
+    text-decoration: none;
+    color: aliceblue;
+}
 
 .formacion{
     
@@ -239,6 +243,12 @@ html {
     padding: 30px;
     margin: 0px 5px;
     border-radius: 5px;
+    height: 300px;
+    
+}
+
+
+.formacion:hover{
     box-shadow: 5px 5px 10px red;
 }
 
@@ -478,6 +488,53 @@ html {
 }
 
 
+
+/* Contacto */
+#contacto{
+    margin: auto;
+    max-width: 1100px;
+    align-items: center;
+    display: block;
+    justify-content: center;
+    padding: 70px;
+}
+
+#contacto .titulo{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: aliceblue;
+    text-decoration: underline;
+    text-decoration-color:red ;
+    font-weight: 500;
+    margin-bottom: 50px;
+    margin-left: 10px;
+}
+
+.cajetilla{
+    max-width: 500px;
+    
+    margin: auto;
+    align-items: center;
+    display: block;
+    padding: 40px;
+    background-color: #464444;
+    box-shadow: 2px 2px 5px red;
+}
+
+.cajetilla a{
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.cajetilla a:hover{
+    color: red;
+}
+
 /* Footer */
 .footer{
     background-color: black;
@@ -501,9 +558,12 @@ html {
 }
 
 
+
+
+
 /* Responsive  */
 
-@media screen and (max-width:866px){
+@media screen and (max-width:800px){
    
         .contacto {
             display: none;
@@ -553,4 +613,66 @@ html {
         #quien_soy .titulo{
             text-align: center;
         }
+
+        /* Formacion */
+        #formacion .fila{
+            display: block;
+        }
+        
+        #formacion .formacion{
+            margin: 30px auto;
+            height: 300px;
+
+        }
+        
+        /* Proyectos */
+
+        #proyectos{
+            display: block;
+            align-items: center;
+            text-align: center;
+        }
+        #proyectos .fila{
+            display: block;  
+            
+        }
+        
+        #proyectos .fila .proyecto{
+            margin: 20px auto;
+            max-width: 200px; /* Ajusta el ancho deseado */
+            height: 200px;
+        }
+}
+
+
+@media screen and (max-width:980px){
+   
+    .contacto {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    nav.responsive {
+        display: block;
+        background-color: rgba(0, 0, 0, .7);
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 7px 0;
+    }
+    nav.responsive ul {
+        display: block ;
+        text-align: center;
+    }
+    nav.responsive ul li {
+        margin: 5px 0;
+    }
+    #icono-nav {
+        display: block;
+    }
+    #icono-nav:hover {
+       color: red;
+    }
 }
