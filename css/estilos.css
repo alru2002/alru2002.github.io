@@ -1,5 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
+/* Pagina inicio */
+
+.welcome{
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    font-weight: 500;
+    height: 100vh;
+    background-color:#0f0f0f;
+    padding: 20px;
+}
+.welcome h2{
+    padding-top: 2rem;
+    font-weight: 500;
+}
+.welcome h1{
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+.texto-netflix {
+    font-family: 'Helvetica Neue', sans-serif; /* Ejemplo de una fuente similar */
+    /* También puedes utilizar otras fuentes que se asemejen a la del logotipo de Netflix */
+    /* Asegúrate de que la fuente esté disponible en tu proyecto o importada correctamente */
+    font-size: 60px; /* Ajusta el tamaño de la fuente según sea necesario */
+    display: flex;
+    font-weight: bold; /* Si es necesario, aplica negrita o modifica el peso de la fuente */
+    /* Otros estilos que desees aplicar al texto */
+    color: red;
+    text-align: justify;
+    justify-content: center;
+    
+  }
+  .welcome a{
+    text-decoration: none;
+    padding: 20px;
+  }
+
+  .boton-inicio {
+        display: block;
+        max-width: 200px;
+        background-color: red;
+        margin: auto;
+        padding: 20px 70px;
+        border-color:transparent;
+        font-family:'Montserrat' ;
+        font-size: 20px;
+        font-weight: 700;
+        color: aliceblue;
+}
+.imagen-usuario {
+  width: 207px;
+  height: 207px;
+  margin:  auto;
+  justify-content: center;
+  background-color: red;
+  overflow: hidden;
+  border-color:transparent;
+}
+
+
+.boton-inicio:hover{
+    box-shadow: 2px 2px 5px;
+}
+
+
+
+
 /* Pagina CV */
 /* Inicio */
 *{
@@ -496,7 +563,7 @@ html {
     align-items: center;
     display: block;
     justify-content: center;
-    padding: 70px;
+    padding: 50px;
 }
 
 #contacto .titulo{
@@ -521,6 +588,15 @@ html {
 }
 
 .cajetilla a{
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    gap: 20px;
+    font-size: 18px;
+}
+.cajetilla p{
     text-decoration: none;
     color: aliceblue;
     display: block;
@@ -684,6 +760,15 @@ html {
     text-align: center;
     margin-bottom: 10px;
     gap: 20px;
-    font-size: 10px;
+    font-size: 12px;
+}
+.cajetilla p{
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    gap: 20px;
+    font-size: 12px;
 }
 }
