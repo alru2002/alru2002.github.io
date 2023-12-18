@@ -92,7 +92,7 @@ html {
     rgba(0, 0, 0, 0.8),
     rgba(0, 0, 0, 0.7),
     rgba(0, 0, 0, 0.6)
-    ), url('/images/fondo.jpg');
+    ), url('../images/fondo.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
