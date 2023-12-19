@@ -1,0 +1,8 @@
+Sitemap: https://alru2002.github.io/sitemap.xml
+
+User-agent: * 
+Disallow: /css/
+Disallow: /archivos/
+Disallow: /images/
+Disallow: /html/
+Disallow: /js/
